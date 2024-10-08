@@ -1,0 +1,332 @@
+AudioClass {
+ signals {
+  SignalClass {
+   id 10253
+   name "Signal 1"
+   tl -3938.18 634.798
+   res "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+   inputsport {
+    1 6 7 23 52 56
+   }
+   outputsport {
+    5 37
+   }
+   inputvalues {
+    1 1 1 1 1000 400
+   }
+   inputvaluesmin {
+    0 0 0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 1 1 10000 10000
+   }
+   path "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+  }
+ }
+ filters {
+  FilterClass : "{C8BF585AA246C60F}Sounds/_SharedData/Configs/Filter/Character/Filter_Character_Occlusion_OBSOLETE.conf" {
+   id 8214
+   version 5
+   tl -3707.386 635.341
+   parent "{C8BF585AA246C60F}Sounds/_SharedData/Configs/Filter/Character/Filter_Character_Occlusion_OBSOLETE.conf"
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 10253
+       port 5
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+  }
+ }
+ sounds {
+  SoundClass {
+   id 28681
+   name "SOUND_BUTTON_CLICK"
+   version 5
+   tl -3222.256 485.22
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 27666
+       port 65
+      }
+     }
+    }
+   }
+   outState 21515
+   outStatePort 79879
+  }
+  SoundClass {
+   id 31753
+   name "SOUND_KNOB_CLICK"
+   version 5
+   tl -3170.739 869.409
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 30738
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB -6
+   outState 21515
+   outStatePort 79879
+  }
+ }
+ mixers {
+  MixerClass {
+   id 21515
+   name "OutputState 21"
+   version 4
+   tl -2694.038 478.253
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass connections {
+     id 79879
+     links {
+      ConnectionClass connection {
+       id 10249
+       port 65
+      }
+      ConnectionClass connection {
+       id 11273
+       port 65
+      }
+      ConnectionClass connection {
+       id 28681
+       port 65
+      }
+      ConnectionClass connection {
+       id 31753
+       port 65
+      }
+      ConnectionClass connection {
+       id 33821
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    16384 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialogue" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialogue_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large"
+   }
+  }
+ }
+ shaders {
+  ShaderClass {
+   id 27666
+   name "Shader 6"
+   version 5
+   tl -3430.857 650.883
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 9244
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 11283
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 8214
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 26628
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    19 0
+   }
+  }
+  ShaderClass {
+   id 30738
+   name "Shader 6"
+   version 5
+   tl -3432.97 865.576
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 9244
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 11283
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 8214
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 32772
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    19 0
+   }
+  }
+ }
+ amplitudes {
+  AmplitudeClass : "{299E65568A14273A}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-45LUFS_to_-30LUFS_Character.conf" {
+   id 11283
+   name ""
+   version 5
+   tl -3709.911 554.167
+   parent "{299E65568A14273A}Sounds/_SharedData/Configs/Amplitude/_SharedData/Amplitude_-45LUFS_to_-30LUFS_Character.conf"
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 26628
+   name "Button Clicks"
+   version 7
+   tl -3709.431 743.481
+   Pitch -1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{BB820E0B1ADAA62D}Sounds/Items/Equipment/Radios/ANPRC_152/Button_Click_1.wav"
+     Probability 17
+    }
+    AudioBankSampleClass Sample {
+     Filename "{229CB792073D97BD}Sounds/Items/Equipment/Radios/ANPRC_152/Button_Click_2.wav"
+     Probability 16
+     Index 1
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5596DF1AF39F78CD}Sounds/Items/Equipment/Radios/ANPRC_152/Button_Click_3.wav"
+     Probability 16
+     Index 2
+    }
+    AudioBankSampleClass Sample {
+     Filename "{5251254B9519C20E}Sounds/Items/Equipment/Radios/ANPRC_152/Button_Click_4.wav"
+     Probability 16
+     Index 3
+    }
+    AudioBankSampleClass Sample {
+     Filename "{255B4DC361BB2D7E}Sounds/Items/Equipment/Radios/ANPRC_152/Button_Click_5.wav"
+     Probability 16
+     Index 4
+    }
+    AudioBankSampleClass Sample {
+     Filename "{BC45F45A7C5C1CEE}Sounds/Items/Equipment/Radios/ANPRC_152/Button_Click_6.wav"
+     Index 5
+    }
+   }
+  }
+  BankLocalClass {
+   id 32772
+   name "Knob Sounds"
+   version 7
+   tl -3717.061 866.849
+   Pitch -1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{2EC0496FA9AD9F8B}Sounds/Items/Equipment/Radios/ANPRC_152/Knob_Click_1.wav"
+     Probability 50
+    }
+    AudioBankSampleClass Sample {
+     Filename "{B7DEF0F6B44AAE1B}Sounds/Items/Equipment/Radios/ANPRC_152/Knob_Click_2.wav"
+     Probability 50
+     Index 1
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass : "{CDE3B73159FC7DFD}Sounds/_SharedData/Configs/Spatiality/Character/Spatiality_Character.conf" {
+   id 9244
+   version 5
+   tl -3706.197 473.167
+   parent "{CDE3B73159FC7DFD}Sounds/_SharedData/Configs/Spatiality/Character/Spatiality_Character.conf"
+   SpatialFactorSource Value
+  }
+ }
+ auxOuts {
+  AuxOutClass {
+   id 33821
+   name "AuxOut 33"
+   version 5
+   tl -2896 819
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 28681
+       port 5
+      }
+      ConnectionClass connection {
+       id 31753
+       port 5
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+   OSPort 79879
+   Volume 3
+  }
+ }
+ version 1
+}

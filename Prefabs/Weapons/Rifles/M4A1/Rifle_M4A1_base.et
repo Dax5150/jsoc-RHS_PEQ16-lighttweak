@@ -1,0 +1,17 @@
+GenericEntity : "{911D6C8DC7BA2D63}Prefabs/Weapons/Core/Rifle_Base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{5EA2BE953838E77C}" {
+     AttachmentSlot InventoryStorageSlot "{5EA2BE95244FA719}" {
+      Offset 0.0285 0.0834 0.2225
+      Angles 0 0 90
+      InspectionWidgetOffset 0.0353 0.0806 0.2308
+     }
+    }
+   }
+  }
+ }
+ coords 0 0 -0.077
+}

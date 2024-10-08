@@ -1,6 +1,5 @@
 RHS_LightEntity : "{648E645C23EC2BF3}Prefabs/Weapons/Attachments/Lasers/anpeq16/ANPEQ16_Laser_LightEntity.et" {
  ID "5CFADC1F39A94BCD"
- LV 5.36
- VolLightIntensity 0.06
- LensFlareScale 7.57
+ Color 0.844 0.844 0.63 0
+ LV 6.08
 }

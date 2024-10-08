@@ -1,0 +1,16 @@
+GenericEntity : "{E18D1D478A6B1E48}Prefabs/Weapons/Rifles/M27IAR/Rifle_M27IAR_base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{5D873BE1CB1DD9C4}" {
+     AttachmentSlot InventoryStorageSlot attachment_grip {
+      Offset 0.0315 0.0847 0.3169
+      Angles 0 0 90
+      InspectionWidgetOffset 0.0377 0.0804 0.3421
+     }
+    }
+   }
+  }
+ }
+}
